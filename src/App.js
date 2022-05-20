@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import classes from "./App.module.css";
+import Wallet from "./Wallet";
+import PlaceBets from "./PlaceBets";
+import { useState } from "react";
 
 function App() {
+  const [balance, setBalance] = useState(1000);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className={classes.main}>
+        <div className={classes.header}>
+          <h1>CRYPTO CRASH</h1>
+          <Wallet balance={balance} />
+        </div>
+        <div className={classes.bet_controls}>
+          <PlaceBets balance={balance} setBalance={setBalance} />
+        </div>
+      </div>
+    </React.Fragment>
   );
 }
 

@@ -1,0 +1,25 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 5em auto;
+  border: 3px solid rgb(83, 53, 253);
+  border-radius: 1em;
+  padding: 1em;
+}
+.header {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bet_controls {
+  width: 95%;
+}

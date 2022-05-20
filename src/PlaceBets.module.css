@@ -1,0 +1,25 @@
+.controls {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.results {
+  font-weight: 600;
+  font-size: large;
+  justify-self: center;
+  display: flex;
+}
